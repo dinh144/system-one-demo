@@ -1,0 +1,7 @@
+Third-party material
+
+LoCoMo: Maharana et al., "Evaluating Very Long-Term Conversational Memory of LLM Agents" (arXiv 2402.17753), https://github.com/snap-research/locomo. Licensed CC BY-NC 4.0. This repository includes short excerpts of its conversation turns in data/cases.json, data/scenario.json and data/replay.json (a recorded run), with attribution, for non-commercial research. The full dataset is not included; scripts/fetch_data.py downloads it.
+
+Models used (downloaded at setup, not included): Laya (Apache-2.0), Kev (Apache-2.0; adapter on Qwen3.5-0.8B-Base, Apache-2.0), Qwen2.5 via Ollama (see each model card for its license).
+
+The demo-authored memories and reference labels in data/cases.json are proposals for this demo and have not been independently verified.

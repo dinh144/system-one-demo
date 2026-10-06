@@ -1,0 +1,38 @@
+[build-system]
+requires = ["setuptools>=69"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "system-one-memory-demo"
+version = "0.1.0"
+description = "Local memory-control model comparison demo"
+requires-python = ">=3.11"
+dependencies = [
+  "fastapi>=0.115,<1",
+  "httpx>=0.27,<1",
+  "psutil>=5.9,<8",
+  "uvicorn[standard]>=0.30,<1",
+]
+
+[project.optional-dependencies]
+models = [
+  "laya>=0.3.28",
+  "torch>=2.6,<2.9",
+  "transformers>=5.17,<6",
+  "accelerate>=1.15",
+  "peft>=0.21",
+]
+
+[tool.setuptools]
+packages = ["backend", "demo"]
+
+[tool.uv]
+environments = ["sys_platform == 'linux' or sys_platform == 'win32'"]
+
+[[tool.uv.index]]
+name = "pytorch-cpu"
+url = "https://download.pytorch.org/whl/cpu"
+explicit = true
+
+[tool.uv.sources]
+torch = { index = "pytorch-cpu", marker = "sys_platform == 'linux'" }

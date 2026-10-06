@@ -1,0 +1,3 @@
+Recorded on: ThinkPad X1 Carbon Gen 9 (Intel i7-1185G7, CPU only, no GPU), 2026-10-07.
+Real run of the 10-turn scenario on the real backend (engines run one after another). Not recorded on the presenter machine.
+Background load on the laptop was not controlled, so latencies shown in the video are noisy.

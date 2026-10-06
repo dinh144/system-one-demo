@@ -1,0 +1,67 @@
+{
+  "id": "audrey-1",
+  "title": "Audrey và các chú chó (10 lượt từ LoCoMo)",
+  "attribution": "Turn text from LoCoMo (Maharana et al.), CC BY-NC 4.0.",
+  "turns": [
+    {
+      "i": 1,
+      "speaker": "user",
+      "text": "I've had them for 3 years! Their names are Pepper, Precious and Panda. I can't live without my little ones!",
+      "source": "LoCoMo conv 5 D1:7"
+    },
+    {
+      "i": 2,
+      "speaker": "user",
+      "text": "Hey Andrew, I got a surprise for you! We adopted another puppy called Pixie. She's SO cute! Isn't she just the cutest?",
+      "source": "LoCoMo conv 5 D2:1"
+    },
+    {
+      "i": 3,
+      "speaker": "user",
+      "text": "Thanks! I know right? She's so cute! Pixie's been keeping us busy, so I haven't had a chance to check out that hiking spot yet.",
+      "source": "LoCoMo conv 5 D2:3"
+    },
+    {
+      "i": 4,
+      "speaker": "user",
+      "text": "Pixie's fitting in great! It took her a few days to get used to the other dogs, but now they're awesome friends. They love playing and exploring the house - so cute!",
+      "source": "LoCoMo conv 5 D2:5"
+    },
+    {
+      "i": 5,
+      "speaker": "user",
+      "text": "Pepper took a bit to get used to her, but now they're always together!",
+      "source": "LoCoMo conv 5 D2:7"
+    },
+    {
+      "i": 6,
+      "speaker": "user",
+      "text": "Hey Andrew! Long time no talk! Last week I finally went on a hike and had this amazing experience with a hummingbird. It was so cool watching it dart around with its wings! Nature is so beautiful.",
+      "source": "LoCoMo conv 5 D4:1"
+    },
+    {
+      "i": 7,
+      "speaker": "user",
+      "text": "Not much has changed since we last talked. I'm busy taking care of my pets and spending time with them. It's really fulfilling.",
+      "source": "LoCoMo conv 5 D4:15"
+    },
+    {
+      "i": 8,
+      "speaker": "user",
+      "text": "When I take them out, we usually play fetch with a ball or frisbee. They love chasing it! We also meet other dog owners in the park and have a doggie playdate. It's a great way for me to chat with people and for them to make new friends.",
+      "source": "LoCoMo conv 5 D4:21"
+    },
+    {
+      "i": 9,
+      "speaker": "user",
+      "text": "Woohoo! I got a new place with a bigger backyard for the pooches! Take a look!",
+      "source": "LoCoMo conv 5 D9:1"
+    },
+    {
+      "i": 10,
+      "speaker": "user",
+      "text": "Oh wow those flowers look beautiful. Well aside from moving to a new house, its just me getting unboxing all the packed boxes. What about you?",
+      "source": "LoCoMo conv 5 D9:17"
+    }
+  ]
+}

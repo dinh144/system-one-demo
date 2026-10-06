@@ -1,0 +1,1203 @@
+{
+  "schema": 1,
+  "source": "replay",
+  "recorded_on": "ThinkPad X1 Carbon Gen 9 (i7-1185G7, CPU only)",
+  "recorded_at": "2026-10-07 01:40:05",
+  "engines": [
+    "laya",
+    "kev-0.8b",
+    "llm:qwen2.5:0.5b"
+  ],
+  "turns": [
+    {
+      "turn": {
+        "i": 1,
+        "text": "I've had them for 3 years! Their names are Pepper, Precious and Panda. I can't live without my little ones!"
+      },
+      "decisions": [
+        {
+          "engine": "laya",
+          "source": "replay",
+          "latency_ms": 569.8603459995866,
+          "device": "cpu",
+          "answers": {
+            "should_store": {
+              "p": 0.3729,
+              "label": "unsure",
+              "probability_source": "model"
+            },
+            "redundant": {
+              "p": 0.1937,
+              "label": "no",
+              "probability_source": "model"
+            },
+            "obsolete": {
+              "p": 0.1229,
+              "label": "no",
+              "probability_source": "model"
+            }
+          },
+          "action": "ask",
+          "memory": [],
+          "gen_tokens": null
+        },
+        {
+          "engine": "kev-0.8b",
+          "source": "replay",
+          "latency_ms": 677.165535000313,
+          "device": "cpu",
+          "answers": {
+            "should_store": {
+              "p": 0.5565,
+              "label": "unsure",
+              "probability_source": "model"
+            },
+            "redundant": {
+              "p": 0.4897,
+              "label": "unsure",
+              "probability_source": "model"
+            },
+            "obsolete": {
+              "p": 0.3563,
+              "label": "unsure",
+              "probability_source": "model"
+            }
+          },
+          "action": "ask",
+          "memory": [],
+          "gen_tokens": null
+        },
+        {
+          "engine": "llm:qwen2.5:0.5b",
+          "source": "replay",
+          "latency_ms": 353.26257399992755,
+          "device": "ollama",
+          "answers": {
+            "should_store": {
+              "p": 0.7562299497704396,
+              "label": "yes",
+              "probability_source": "model"
+            },
+            "redundant": {
+              "p": 0.14031553041423694,
+              "label": "no",
+              "probability_source": "model"
+            },
+            "obsolete": {
+              "p": 0.20965167422667152,
+              "label": "no",
+              "probability_source": "model"
+            }
+          },
+          "action": "add",
+          "memory": [
+            {
+              "id": "b553e8d9-1097-4453-8579-26d4a962f591",
+              "text": "I've had them for 3 years! Their names are Pepper, Precious and Panda. I can't live without my little ones!",
+              "status": "active"
+            }
+          ],
+          "gen_tokens": 25
+        }
+      ],
+      "errors": []
+    },
+    {
+      "turn": {
+        "i": 2,
+        "text": "Hey Andrew, I got a surprise for you! We adopted another puppy called Pixie. She's SO cute! Isn't she just the cutest?"
+      },
+      "decisions": [
+        {
+          "engine": "laya",
+          "source": "replay",
+          "latency_ms": 530.7622560003438,
+          "device": "cpu",
+          "answers": {
+            "should_store": {
+              "p": 0.4877,
+              "label": "unsure",
+              "probability_source": "model"
+            },
+            "redundant": {
+              "p": 0.2319,
+              "label": "no",
+              "probability_source": "model"
+            },
+            "obsolete": {
+              "p": 0.1091,
+              "label": "no",
+              "probability_source": "model"
+            }
+          },
+          "action": "ask",
+          "memory": [],
+          "gen_tokens": null
+        },
+        {
+          "engine": "kev-0.8b",
+          "source": "replay",
+          "latency_ms": 714.8168519997853,
+          "device": "cpu",
+          "answers": {
+            "should_store": {
+              "p": 0.6047,
+              "label": "unsure",
+              "probability_source": "model"
+            },
+            "redundant": {
+              "p": 0.5524,
+              "label": "unsure",
+              "probability_source": "model"
+            },
+            "obsolete": {
+              "p": 0.3683,
+              "label": "unsure",
+              "probability_source": "model"
+            }
+          },
+          "action": "ask",
+          "memory": [],
+          "gen_tokens": null
+        },
+        {
+          "engine": "llm:qwen2.5:0.5b",
+          "source": "replay",
+          "latency_ms": 344.87225000066246,
+          "device": "ollama",
+          "answers": {
+            "should_store": {
+              "p": 0.8919627742037857,
+              "label": "yes",
+              "probability_source": "model"
+            },
+            "redundant": {
+              "p": 0.03524627441810899,
+              "label": "no",
+              "probability_source": "model"
+            },
+            "obsolete": {
+              "p": 0.12999458343027204,
+              "label": "no",
+              "probability_source": "model"
+            }
+          },
+          "action": "add",
+          "memory": [
+            {
+              "id": "b553e8d9-1097-4453-8579-26d4a962f591",
+              "text": "I've had them for 3 years! Their names are Pepper, Precious and Panda. I can't live without my little ones!",
+              "status": "active"
+            },
+            {
+              "id": "9968c5be-307c-43af-bd5e-bd8932ca2890",
+              "text": "Hey Andrew, I got a surprise for you! We adopted another puppy called Pixie. She's SO cute! Isn't she just the cutest?",
+              "status": "active"
+            }
+          ],
+          "gen_tokens": 25
+        }
+      ],
+      "errors": []
+    },
+    {
+      "turn": {
+        "i": 3,
+        "text": "Thanks! I know right? She's so cute! Pixie's been keeping us busy, so I haven't had a chance to check out that hiking spot yet."
+      },
+      "decisions": [
+        {
+          "engine": "laya",
+          "source": "replay",
+          "latency_ms": 553.557981999802,
+          "device": "cpu",
+          "answers": {
+            "should_store": {
+              "p": 0.5515,
+              "label": "unsure",
+              "probability_source": "model"
+            },
+            "redundant": {
+              "p": 0.2425,
+              "label": "no",
+              "probability_source": "model"
+            },
+            "obsolete": {
+              "p": 0.2908,
+              "label": "no",
+              "probability_source": "model"
+            }
+          },
+          "action": "ask",
+          "memory": [],
+          "gen_tokens": null
+        },
+        {
+          "engine": "kev-0.8b",
+          "source": "replay",
+          "latency_ms": 677.6219530001981,
+          "device": "cpu",
+          "answers": {
+            "should_store": {
+              "p": 0.5063,
+              "label": "unsure",
+              "probability_source": "model"
+            },
+            "redundant": {
+              "p": 0.352,
+              "label": "unsure",
+              "probability_source": "model"
+            },
+            "obsolete": {
+              "p": 0.3968,
+              "label": "unsure",
+              "probability_source": "model"
+            }
+          },
+          "action": "ask",
+          "memory": [],
+          "gen_tokens": null
+        },
+        {
+          "engine": "llm:qwen2.5:0.5b",
+          "source": "replay",
+          "latency_ms": 289.86703400005354,
+          "device": "ollama",
+          "answers": {
+            "should_store": {
+              "p": 0.9080851811410309,
+              "label": "yes",
+              "probability_source": "model"
+            },
+            "redundant": {
+              "p": 0.1303781743712685,
+              "label": "no",
+              "probability_source": "model"
+            },
+            "obsolete": {
+              "p": 0.06611669761288566,
+              "label": "no",
+              "probability_source": "model"
+            }
+          },
+          "action": "add",
+          "memory": [
+            {
+              "id": "b553e8d9-1097-4453-8579-26d4a962f591",
+              "text": "I've had them for 3 years! Their names are Pepper, Precious and Panda. I can't live without my little ones!",
+              "status": "active"
+            },
+            {
+              "id": "9968c5be-307c-43af-bd5e-bd8932ca2890",
+              "text": "Hey Andrew, I got a surprise for you! We adopted another puppy called Pixie. She's SO cute! Isn't she just the cutest?",
+              "status": "active"
+            },
+            {
+              "id": "23279f7c-ef22-434d-9095-d7168dbaac08",
+              "text": "Thanks! I know right? She's so cute! Pixie's been keeping us busy, so I haven't had a chance to check out that hiking spot yet.",
+              "status": "active"
+            }
+          ],
+          "gen_tokens": 20
+        }
+      ],
+      "errors": []
+    },
+    {
+      "turn": {
+        "i": 4,
+        "text": "Pixie's fitting in great! It took her a few days to get used to the other dogs, but now they're awesome friends. They love playing and exploring the house - so cute!"
+      },
+      "decisions": [
+        {
+          "engine": "laya",
+          "source": "replay",
+          "latency_ms": 593.5582849997445,
+          "device": "cpu",
+          "answers": {
+            "should_store": {
+              "p": 0.3713,
+              "label": "unsure",
+              "probability_source": "model"
+            },
+            "redundant": {
+              "p": 0.2295,
+              "label": "no",
+              "probability_source": "model"
+            },
+            "obsolete": {
+              "p": 0.1085,
+              "label": "no",
+              "probability_source": "model"
+            }
+          },
+          "action": "ask",
+          "memory": [],
+          "gen_tokens": null
+        },
+        {
+          "engine": "kev-0.8b",
+          "source": "replay",
+          "latency_ms": 692.8155100004005,
+          "device": "cpu",
+          "answers": {
+            "should_store": {
+              "p": 0.5903,
+              "label": "unsure",
+              "probability_source": "model"
+            },
+            "redundant": {
+              "p": 0.5837,
+              "label": "unsure",
+              "probability_source": "model"
+            },
+            "obsolete": {
+              "p": 0.3258,
+              "label": "no",
+              "probability_source": "model"
+            }
+          },
+          "action": "ask",
+          "memory": [],
+          "gen_tokens": null
+        },
+        {
+          "engine": "llm:qwen2.5:0.5b",
+          "source": "replay",
+          "latency_ms": 365.2655669993692,
+          "device": "ollama",
+          "answers": {
+            "should_store": {
+              "p": 0.8529986362459602,
+              "label": "yes",
+              "probability_source": "model"
+            },
+            "redundant": {
+              "p": 0.05780017978948114,
+              "label": "no",
+              "probability_source": "model"
+            },
+            "obsolete": {
+              "p": 0.14727686677980317,
+              "label": "no",
+              "probability_source": "model"
+            }
+          },
+          "action": "add",
+          "memory": [
+            {
+              "id": "b553e8d9-1097-4453-8579-26d4a962f591",
+              "text": "I've had them for 3 years! Their names are Pepper, Precious and Panda. I can't live without my little ones!",
+              "status": "active"
+            },
+            {
+              "id": "9968c5be-307c-43af-bd5e-bd8932ca2890",
+              "text": "Hey Andrew, I got a surprise for you! We adopted another puppy called Pixie. She's SO cute! Isn't she just the cutest?",
+              "status": "active"
+            },
+            {
+              "id": "23279f7c-ef22-434d-9095-d7168dbaac08",
+              "text": "Thanks! I know right? She's so cute! Pixie's been keeping us busy, so I haven't had a chance to check out that hiking spot yet.",
+              "status": "active"
+            },
+            {
+              "id": "c3792bd5-225d-4326-bab1-b6a19c9ee007",
+              "text": "Pixie's fitting in great! It took her a few days to get used to the other dogs, but now they're awesome friends. They love playing and exploring the house - so cute!",
+              "status": "active"
+            }
+          ],
+          "gen_tokens": 25
+        }
+      ],
+      "errors": []
+    },
+    {
+      "turn": {
+        "i": 5,
+        "text": "Pepper took a bit to get used to her, but now they're always together!"
+      },
+      "decisions": [
+        {
+          "engine": "laya",
+          "source": "replay",
+          "latency_ms": 533.8582540007337,
+          "device": "cpu",
+          "answers": {
+            "should_store": {
+              "p": 0.3193,
+              "label": "no",
+              "probability_source": "model"
+            },
+            "redundant": {
+              "p": 0.1849,
+              "label": "no",
+              "probability_source": "model"
+            },
+            "obsolete": {
+              "p": 0.1809,
+              "label": "no",
+              "probability_source": "model"
+            }
+          },
+          "action": "skip",
+          "memory": [],
+          "gen_tokens": null
+        },
+        {
+          "engine": "kev-0.8b",
+          "source": "replay",
+          "latency_ms": 661.357210999995,
+          "device": "cpu",
+          "answers": {
+            "should_store": {
+              "p": 0.5267,
+              "label": "unsure",
+              "probability_source": "model"
+            },
+            "redundant": {
+              "p": 0.4561,
+              "label": "unsure",
+              "probability_source": "model"
+            },
+            "obsolete": {
+              "p": 0.3511,
+              "label": "unsure",
+              "probability_source": "model"
+            }
+          },
+          "action": "ask",
+          "memory": [],
+          "gen_tokens": null
+        },
+        {
+          "engine": "llm:qwen2.5:0.5b",
+          "source": "replay",
+          "latency_ms": 345.2678979992925,
+          "device": "ollama",
+          "answers": {
+            "should_store": {
+              "p": 0.9427917315708546,
+              "label": "yes",
+              "probability_source": "model"
+            },
+            "redundant": {
+              "p": 0.030847430534923125,
+              "label": "no",
+              "probability_source": "model"
+            },
+            "obsolete": {
+              "p": 0.15268106666771708,
+              "label": "no",
+              "probability_source": "model"
+            }
+          },
+          "action": "add",
+          "memory": [
+            {
+              "id": "b553e8d9-1097-4453-8579-26d4a962f591",
+              "text": "I've had them for 3 years! Their names are Pepper, Precious and Panda. I can't live without my little ones!",
+              "status": "active"
+            },
+            {
+              "id": "9968c5be-307c-43af-bd5e-bd8932ca2890",
+              "text": "Hey Andrew, I got a surprise for you! We adopted another puppy called Pixie. She's SO cute! Isn't she just the cutest?",
+              "status": "active"
+            },
+            {
+              "id": "23279f7c-ef22-434d-9095-d7168dbaac08",
+              "text": "Thanks! I know right? She's so cute! Pixie's been keeping us busy, so I haven't had a chance to check out that hiking spot yet.",
+              "status": "active"
+            },
+            {
+              "id": "c3792bd5-225d-4326-bab1-b6a19c9ee007",
+              "text": "Pixie's fitting in great! It took her a few days to get used to the other dogs, but now they're awesome friends. They love playing and exploring the house - so cute!",
+              "status": "active"
+            },
+            {
+              "id": "509816c1-dcb8-45b0-9265-e68b0fc40492",
+              "text": "Pepper took a bit to get used to her, but now they're always together!",
+              "status": "active"
+            }
+          ],
+          "gen_tokens": 25
+        }
+      ],
+      "errors": []
+    },
+    {
+      "turn": {
+        "i": 6,
+        "text": "Hey Andrew! Long time no talk! Last week I finally went on a hike and had this amazing experience with a hummingbird. It was so cool watching it dart around with its wings! Nature is so beautiful."
+      },
+      "decisions": [
+        {
+          "engine": "laya",
+          "source": "replay",
+          "latency_ms": 621.3722219999909,
+          "device": "cpu",
+          "answers": {
+            "should_store": {
+              "p": 0.6981,
+              "label": "yes",
+              "probability_source": "model"
+            },
+            "redundant": {
+              "p": 0.1849,
+              "label": "no",
+              "probability_source": "model"
+            },
+            "obsolete": {
+              "p": 0.1204,
+              "label": "no",
+              "probability_source": "model"
+            }
+          },
+          "action": "add",
+          "memory": [
+            {
+              "id": "5e8b4caf-52e1-45c0-9132-fa672be5c564",
+              "text": "Hey Andrew! Long time no talk! Last week I finally went on a hike and had this amazing experience with a hummingbird. It was so cool watching it dart around with its wings! Nature is so beautiful.",
+              "status": "active"
+            }
+          ],
+          "gen_tokens": null
+        },
+        {
+          "engine": "kev-0.8b",
+          "source": "replay",
+          "latency_ms": 770.7635609995123,
+          "device": "cpu",
+          "answers": {
+            "should_store": {
+              "p": 0.6908,
+              "label": "yes",
+              "probability_source": "model"
+            },
+            "redundant": {
+              "p": 0.5355,
+              "label": "unsure",
+              "probability_source": "model"
+            },
+            "obsolete": {
+              "p": 0.3347,
+              "label": "no",
+              "probability_source": "model"
+            }
+          },
+          "action": "ask",
+          "memory": [],
+          "gen_tokens": null
+        },
+        {
+          "engine": "llm:qwen2.5:0.5b",
+          "source": "replay",
+          "latency_ms": 359.86370600039663,
+          "device": "ollama",
+          "answers": {
+            "should_store": {
+              "p": 0.8804534043152379,
+              "label": "yes",
+              "probability_source": "model"
+            },
+            "redundant": {
+              "p": 0.06793019026295007,
+              "label": "no",
+              "probability_source": "model"
+            },
+            "obsolete": {
+              "p": 0.19698424561522263,
+              "label": "no",
+              "probability_source": "model"
+            }
+          },
+          "action": "add",
+          "memory": [
+            {
+              "id": "b553e8d9-1097-4453-8579-26d4a962f591",
+              "text": "I've had them for 3 years! Their names are Pepper, Precious and Panda. I can't live without my little ones!",
+              "status": "active"
+            },
+            {
+              "id": "9968c5be-307c-43af-bd5e-bd8932ca2890",
+              "text": "Hey Andrew, I got a surprise for you! We adopted another puppy called Pixie. She's SO cute! Isn't she just the cutest?",
+              "status": "active"
+            },
+            {
+              "id": "23279f7c-ef22-434d-9095-d7168dbaac08",
+              "text": "Thanks! I know right? She's so cute! Pixie's been keeping us busy, so I haven't had a chance to check out that hiking spot yet.",
+              "status": "active"
+            },
+            {
+              "id": "c3792bd5-225d-4326-bab1-b6a19c9ee007",
+              "text": "Pixie's fitting in great! It took her a few days to get used to the other dogs, but now they're awesome friends. They love playing and exploring the house - so cute!",
+              "status": "active"
+            },
+            {
+              "id": "509816c1-dcb8-45b0-9265-e68b0fc40492",
+              "text": "Pepper took a bit to get used to her, but now they're always together!",
+              "status": "active"
+            },
+            {
+              "id": "08c690db-9bfc-4b79-83f5-24f24d9d3151",
+              "text": "Hey Andrew! Long time no talk! Last week I finally went on a hike and had this amazing experience with a hummingbird. It was so cool watching it dart around with its wings! Nature is so beautiful.",
+              "status": "active"
+            }
+          ],
+          "gen_tokens": 25
+        }
+      ],
+      "errors": []
+    },
+    {
+      "turn": {
+        "i": 7,
+        "text": "Not much has changed since we last talked. I'm busy taking care of my pets and spending time with them. It's really fulfilling."
+      },
+      "decisions": [
+        {
+          "engine": "laya",
+          "source": "replay",
+          "latency_ms": 1253.4653129996514,
+          "device": "cpu",
+          "answers": {
+            "should_store": {
+              "p": 0.5041,
+              "label": "unsure",
+              "probability_source": "model"
+            },
+            "redundant": {
+              "p": 0.6634,
+              "label": "yes",
+              "probability_source": "model"
+            },
+            "obsolete": {
+              "p": 0.1625,
+              "label": "no",
+              "probability_source": "model"
+            }
+          },
+          "action": "ask",
+          "memory": [
+            {
+              "id": "5e8b4caf-52e1-45c0-9132-fa672be5c564",
+              "text": "Hey Andrew! Long time no talk! Last week I finally went on a hike and had this amazing experience with a hummingbird. It was so cool watching it dart around with its wings! Nature is so beautiful.",
+              "status": "active"
+            }
+          ],
+          "gen_tokens": null
+        },
+        {
+          "engine": "kev-0.8b",
+          "source": "replay",
+          "latency_ms": 710.0318720003997,
+          "device": "cpu",
+          "answers": {
+            "should_store": {
+              "p": 0.468,
+              "label": "unsure",
+              "probability_source": "model"
+            },
+            "redundant": {
+              "p": 0.5274,
+              "label": "unsure",
+              "probability_source": "model"
+            },
+            "obsolete": {
+              "p": 0.3086,
+              "label": "no",
+              "probability_source": "model"
+            }
+          },
+          "action": "ask",
+          "memory": [],
+          "gen_tokens": null
+        },
+        {
+          "engine": "llm:qwen2.5:0.5b",
+          "source": "replay",
+          "latency_ms": 392.1540340006686,
+          "device": "ollama",
+          "answers": {
+            "should_store": {
+              "p": 0.9496141868328478,
+              "label": "yes",
+              "probability_source": "model"
+            },
+            "redundant": {
+              "p": 0.03815754779989068,
+              "label": "no",
+              "probability_source": "model"
+            },
+            "obsolete": {
+              "p": 0.1347278874589252,
+              "label": "no",
+              "probability_source": "model"
+            }
+          },
+          "action": "add",
+          "memory": [
+            {
+              "id": "b553e8d9-1097-4453-8579-26d4a962f591",
+              "text": "I've had them for 3 years! Their names are Pepper, Precious and Panda. I can't live without my little ones!",
+              "status": "active"
+            },
+            {
+              "id": "9968c5be-307c-43af-bd5e-bd8932ca2890",
+              "text": "Hey Andrew, I got a surprise for you! We adopted another puppy called Pixie. She's SO cute! Isn't she just the cutest?",
+              "status": "active"
+            },
+            {
+              "id": "23279f7c-ef22-434d-9095-d7168dbaac08",
+              "text": "Thanks! I know right? She's so cute! Pixie's been keeping us busy, so I haven't had a chance to check out that hiking spot yet.",
+              "status": "active"
+            },
+            {
+              "id": "c3792bd5-225d-4326-bab1-b6a19c9ee007",
+              "text": "Pixie's fitting in great! It took her a few days to get used to the other dogs, but now they're awesome friends. They love playing and exploring the house - so cute!",
+              "status": "active"
+            },
+            {
+              "id": "509816c1-dcb8-45b0-9265-e68b0fc40492",
+              "text": "Pepper took a bit to get used to her, but now they're always together!",
+              "status": "active"
+            },
+            {
+              "id": "08c690db-9bfc-4b79-83f5-24f24d9d3151",
+              "text": "Hey Andrew! Long time no talk! Last week I finally went on a hike and had this amazing experience with a hummingbird. It was so cool watching it dart around with its wings! Nature is so beautiful.",
+              "status": "active"
+            },
+            {
+              "id": "15316287-611f-4956-ae5c-69ca98e7e942",
+              "text": "Not much has changed since we last talked. I'm busy taking care of my pets and spending time with them. It's really fulfilling.",
+              "status": "active"
+            }
+          ],
+          "gen_tokens": 25
+        }
+      ],
+      "errors": []
+    },
+    {
+      "turn": {
+        "i": 8,
+        "text": "When I take them out, we usually play fetch with a ball or frisbee. They love chasing it! We also meet other dog owners in the park and have a doggie playdate. It's a great way for me to chat with people and for them to make new friends."
+      },
+      "decisions": [
+        {
+          "engine": "laya",
+          "source": "replay",
+          "latency_ms": 4844.363456000792,
+          "device": "cpu",
+          "answers": {
+            "should_store": {
+              "p": 0.4773,
+              "label": "unsure",
+              "probability_source": "model"
+            },
+            "redundant": {
+              "p": 0.8194,
+              "label": "yes",
+              "probability_source": "model"
+            },
+            "obsolete": {
+              "p": 0.1014,
+              "label": "no",
+              "probability_source": "model"
+            }
+          },
+          "action": "ask",
+          "memory": [
+            {
+              "id": "5e8b4caf-52e1-45c0-9132-fa672be5c564",
+              "text": "Hey Andrew! Long time no talk! Last week I finally went on a hike and had this amazing experience with a hummingbird. It was so cool watching it dart around with its wings! Nature is so beautiful.",
+              "status": "active"
+            }
+          ],
+          "gen_tokens": null
+        },
+        {
+          "engine": "kev-0.8b",
+          "source": "replay",
+          "latency_ms": 2623.385222000252,
+          "device": "cpu",
+          "answers": {
+            "should_store": {
+              "p": 0.588,
+              "label": "unsure",
+              "probability_source": "model"
+            },
+            "redundant": {
+              "p": 0.5377,
+              "label": "unsure",
+              "probability_source": "model"
+            },
+            "obsolete": {
+              "p": 0.3285,
+              "label": "no",
+              "probability_source": "model"
+            }
+          },
+          "action": "ask",
+          "memory": [],
+          "gen_tokens": null
+        },
+        {
+          "engine": "llm:qwen2.5:0.5b",
+          "source": "replay",
+          "latency_ms": 609.1819279999982,
+          "device": "ollama",
+          "answers": {
+            "should_store": {
+              "p": 0.9031845086863151,
+              "label": "yes",
+              "probability_source": "model"
+            },
+            "redundant": {
+              "p": 0.041795643861641536,
+              "label": "no",
+              "probability_source": "model"
+            },
+            "obsolete": {
+              "p": 0.14473246648854998,
+              "label": "no",
+              "probability_source": "model"
+            }
+          },
+          "action": "add",
+          "memory": [
+            {
+              "id": "b553e8d9-1097-4453-8579-26d4a962f591",
+              "text": "I've had them for 3 years! Their names are Pepper, Precious and Panda. I can't live without my little ones!",
+              "status": "active"
+            },
+            {
+              "id": "9968c5be-307c-43af-bd5e-bd8932ca2890",
+              "text": "Hey Andrew, I got a surprise for you! We adopted another puppy called Pixie. She's SO cute! Isn't she just the cutest?",
+              "status": "active"
+            },
+            {
+              "id": "23279f7c-ef22-434d-9095-d7168dbaac08",
+              "text": "Thanks! I know right? She's so cute! Pixie's been keeping us busy, so I haven't had a chance to check out that hiking spot yet.",
+              "status": "active"
+            },
+            {
+              "id": "c3792bd5-225d-4326-bab1-b6a19c9ee007",
+              "text": "Pixie's fitting in great! It took her a few days to get used to the other dogs, but now they're awesome friends. They love playing and exploring the house - so cute!",
+              "status": "active"
+            },
+            {
+              "id": "509816c1-dcb8-45b0-9265-e68b0fc40492",
+              "text": "Pepper took a bit to get used to her, but now they're always together!",
+              "status": "active"
+            },
+            {
+              "id": "08c690db-9bfc-4b79-83f5-24f24d9d3151",
+              "text": "Hey Andrew! Long time no talk! Last week I finally went on a hike and had this amazing experience with a hummingbird. It was so cool watching it dart around with its wings! Nature is so beautiful.",
+              "status": "active"
+            },
+            {
+              "id": "15316287-611f-4956-ae5c-69ca98e7e942",
+              "text": "Not much has changed since we last talked. I'm busy taking care of my pets and spending time with them. It's really fulfilling.",
+              "status": "active"
+            },
+            {
+              "id": "86b24700-ed20-4946-a335-ca9badd6b0bc",
+              "text": "When I take them out, we usually play fetch with a ball or frisbee. They love chasing it! We also meet other dog owners in the park and have a doggie playdate. It's a great way for me to chat with people and for them to make new friends.",
+              "status": "active"
+            }
+          ],
+          "gen_tokens": 25
+        }
+      ],
+      "errors": []
+    },
+    {
+      "turn": {
+        "i": 9,
+        "text": "Woohoo! I got a new place with a bigger backyard for the pooches! Take a look!"
+      },
+      "decisions": [
+        {
+          "engine": "laya",
+          "source": "replay",
+          "latency_ms": 3303.3552859997144,
+          "device": "cpu",
+          "answers": {
+            "should_store": {
+              "p": 0.1326,
+              "label": "no",
+              "probability_source": "model"
+            },
+            "redundant": {
+              "p": 0.0786,
+              "label": "no",
+              "probability_source": "model"
+            },
+            "obsolete": {
+              "p": 0.1649,
+              "label": "no",
+              "probability_source": "model"
+            }
+          },
+          "action": "skip",
+          "memory": [
+            {
+              "id": "5e8b4caf-52e1-45c0-9132-fa672be5c564",
+              "text": "Hey Andrew! Long time no talk! Last week I finally went on a hike and had this amazing experience with a hummingbird. It was so cool watching it dart around with its wings! Nature is so beautiful.",
+              "status": "active"
+            }
+          ],
+          "gen_tokens": null
+        },
+        {
+          "engine": "kev-0.8b",
+          "source": "replay",
+          "latency_ms": 1968.1137469997338,
+          "device": "cpu",
+          "answers": {
+            "should_store": {
+              "p": 0.4545,
+              "label": "unsure",
+              "probability_source": "model"
+            },
+            "redundant": {
+              "p": 0.4457,
+              "label": "unsure",
+              "probability_source": "model"
+            },
+            "obsolete": {
+              "p": 0.4295,
+              "label": "unsure",
+              "probability_source": "model"
+            }
+          },
+          "action": "ask",
+          "memory": [],
+          "gen_tokens": null
+        },
+        {
+          "engine": "llm:qwen2.5:0.5b",
+          "source": "replay",
+          "latency_ms": 451.30604099995253,
+          "device": "ollama",
+          "answers": {
+            "should_store": {
+              "p": 0.9265207438496297,
+              "label": "yes",
+              "probability_source": "model"
+            },
+            "redundant": {
+              "p": 0.10032808884907704,
+              "label": "no",
+              "probability_source": "model"
+            },
+            "obsolete": {
+              "p": 0.04253692860300168,
+              "label": "no",
+              "probability_source": "model"
+            }
+          },
+          "action": "add",
+          "memory": [
+            {
+              "id": "b553e8d9-1097-4453-8579-26d4a962f591",
+              "text": "I've had them for 3 years! Their names are Pepper, Precious and Panda. I can't live without my little ones!",
+              "status": "active"
+            },
+            {
+              "id": "9968c5be-307c-43af-bd5e-bd8932ca2890",
+              "text": "Hey Andrew, I got a surprise for you! We adopted another puppy called Pixie. She's SO cute! Isn't she just the cutest?",
+              "status": "active"
+            },
+            {
+              "id": "23279f7c-ef22-434d-9095-d7168dbaac08",
+              "text": "Thanks! I know right? She's so cute! Pixie's been keeping us busy, so I haven't had a chance to check out that hiking spot yet.",
+              "status": "active"
+            },
+            {
+              "id": "c3792bd5-225d-4326-bab1-b6a19c9ee007",
+              "text": "Pixie's fitting in great! It took her a few days to get used to the other dogs, but now they're awesome friends. They love playing and exploring the house - so cute!",
+              "status": "active"
+            },
+            {
+              "id": "509816c1-dcb8-45b0-9265-e68b0fc40492",
+              "text": "Pepper took a bit to get used to her, but now they're always together!",
+              "status": "active"
+            },
+            {
+              "id": "08c690db-9bfc-4b79-83f5-24f24d9d3151",
+              "text": "Hey Andrew! Long time no talk! Last week I finally went on a hike and had this amazing experience with a hummingbird. It was so cool watching it dart around with its wings! Nature is so beautiful.",
+              "status": "active"
+            },
+            {
+              "id": "15316287-611f-4956-ae5c-69ca98e7e942",
+              "text": "Not much has changed since we last talked. I'm busy taking care of my pets and spending time with them. It's really fulfilling.",
+              "status": "active"
+            },
+            {
+              "id": "86b24700-ed20-4946-a335-ca9badd6b0bc",
+              "text": "When I take them out, we usually play fetch with a ball or frisbee. They love chasing it! We also meet other dog owners in the park and have a doggie playdate. It's a great way for me to chat with people and for them to make new friends.",
+              "status": "active"
+            },
+            {
+              "id": "56f130de-35a0-4395-b326-25acc812114d",
+              "text": "Woohoo! I got a new place with a bigger backyard for the pooches! Take a look!",
+              "status": "active"
+            }
+          ],
+          "gen_tokens": 20
+        }
+      ],
+      "errors": []
+    },
+    {
+      "turn": {
+        "i": 10,
+        "text": "Oh wow those flowers look beautiful. Well aside from moving to a new house, its just me getting unboxing all the packed boxes. What about you?"
+      },
+      "decisions": [
+        {
+          "engine": "laya",
+          "source": "replay",
+          "latency_ms": 3381.6087320001316,
+          "device": "cpu",
+          "answers": {
+            "should_store": {
+              "p": 0.6711,
+              "label": "yes",
+              "probability_source": "model"
+            },
+            "redundant": {
+              "p": 0.3488,
+              "label": "no",
+              "probability_source": "model"
+            },
+            "obsolete": {
+              "p": 0.1773,
+              "label": "no",
+              "probability_source": "model"
+            }
+          },
+          "action": "add",
+          "memory": [
+            {
+              "id": "5e8b4caf-52e1-45c0-9132-fa672be5c564",
+              "text": "Hey Andrew! Long time no talk! Last week I finally went on a hike and had this amazing experience with a hummingbird. It was so cool watching it dart around with its wings! Nature is so beautiful.",
+              "status": "active"
+            },
+            {
+              "id": "76359640-fd04-4e24-ba99-64d7be7f3696",
+              "text": "Oh wow those flowers look beautiful. Well aside from moving to a new house, its just me getting unboxing all the packed boxes. What about you?",
+              "status": "active"
+            }
+          ],
+          "gen_tokens": null
+        },
+        {
+          "engine": "kev-0.8b",
+          "source": "replay",
+          "latency_ms": 1948.691288000191,
+          "device": "cpu",
+          "answers": {
+            "should_store": {
+              "p": 0.3339,
+              "label": "no",
+              "probability_source": "model"
+            },
+            "redundant": {
+              "p": 0.3495,
+              "label": "no",
+              "probability_source": "model"
+            },
+            "obsolete": {
+              "p": 0.3834,
+              "label": "unsure",
+              "probability_source": "model"
+            }
+          },
+          "action": "ask",
+          "memory": [],
+          "gen_tokens": null
+        },
+        {
+          "engine": "llm:qwen2.5:0.5b",
+          "source": "replay",
+          "latency_ms": 466.6815910004516,
+          "device": "ollama",
+          "answers": {
+            "should_store": {
+              "p": 0.8820620809923772,
+              "label": "yes",
+              "probability_source": "model"
+            },
+            "redundant": {
+              "p": 0.1590367266114472,
+              "label": "no",
+              "probability_source": "model"
+            },
+            "obsolete": {
+              "p": 0.06775904089030868,
+              "label": "no",
+              "probability_source": "model"
+            }
+          },
+          "action": "add",
+          "memory": [
+            {
+              "id": "b553e8d9-1097-4453-8579-26d4a962f591",
+              "text": "I've had them for 3 years! Their names are Pepper, Precious and Panda. I can't live without my little ones!",
+              "status": "active"
+            },
+            {
+              "id": "9968c5be-307c-43af-bd5e-bd8932ca2890",
+              "text": "Hey Andrew, I got a surprise for you! We adopted another puppy called Pixie. She's SO cute! Isn't she just the cutest?",
+              "status": "active"
+            },
+            {
+              "id": "23279f7c-ef22-434d-9095-d7168dbaac08",
+              "text": "Thanks! I know right? She's so cute! Pixie's been keeping us busy, so I haven't had a chance to check out that hiking spot yet.",
+              "status": "active"
+            },
+            {
+              "id": "c3792bd5-225d-4326-bab1-b6a19c9ee007",
+              "text": "Pixie's fitting in great! It took her a few days to get used to the other dogs, but now they're awesome friends. They love playing and exploring the house - so cute!",
+              "status": "active"
+            },
+            {
+              "id": "509816c1-dcb8-45b0-9265-e68b0fc40492",
+              "text": "Pepper took a bit to get used to her, but now they're always together!",
+              "status": "active"
+            },
+            {
+              "id": "08c690db-9bfc-4b79-83f5-24f24d9d3151",
+              "text": "Hey Andrew! Long time no talk! Last week I finally went on a hike and had this amazing experience with a hummingbird. It was so cool watching it dart around with its wings! Nature is so beautiful.",
+              "status": "active"
+            },
+            {
+              "id": "15316287-611f-4956-ae5c-69ca98e7e942",
+              "text": "Not much has changed since we last talked. I'm busy taking care of my pets and spending time with them. It's really fulfilling.",
+              "status": "active"
+            },
+            {
+              "id": "86b24700-ed20-4946-a335-ca9badd6b0bc",
+              "text": "When I take them out, we usually play fetch with a ball or frisbee. They love chasing it! We also meet other dog owners in the park and have a doggie playdate. It's a great way for me to chat with people and for them to make new friends.",
+              "status": "active"
+            },
+            {
+              "id": "56f130de-35a0-4395-b326-25acc812114d",
+              "text": "Woohoo! I got a new place with a bigger backyard for the pooches! Take a look!",
+              "status": "active"
+            },
+            {
+              "id": "6f9e93f2-fdb1-43ea-bf0a-73cfcc2a06bd",
+              "text": "Oh wow those flowers look beautiful. Well aside from moving to a new house, its just me getting unboxing all the packed boxes. What about you?",
+              "status": "active"
+            }
+          ],
+          "gen_tokens": 20
+        }
+      ],
+      "errors": []
+    }
+  ]
+}

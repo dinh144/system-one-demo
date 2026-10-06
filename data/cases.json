@@ -1,0 +1,456 @@
+{
+  "n": 30,
+  "label_note": "nhãn tham chiếu (n = 30), chưa kiểm định độc lập",
+  "positives": {
+    "should_store": 20,
+    "redundant": 3,
+    "obsolete": 3
+  },
+  "attribution": "Turn text from LoCoMo (Maharana et al.), CC BY-NC 4.0; memories and labels are demo-authored.",
+  "cases": [
+    {
+      "id": "c01",
+      "source": "LoCoMo conv 5 D1:1 (Audrey)",
+      "observation": "Hey Andrew! Good to see ya! What's been up since we last talked?",
+      "recent_memories": [],
+      "candidate": null,
+      "reference": {
+        "should_store": false,
+        "redundant": false,
+        "obsolete": false
+      }
+    },
+    {
+      "id": "c02",
+      "source": "LoCoMo conv 5 D1:7 (Audrey)",
+      "observation": "I've had them for 3 years! Their names are Pepper, Precious and Panda. I can't live without my little ones!",
+      "recent_memories": [],
+      "candidate": null,
+      "reference": {
+        "should_store": true,
+        "redundant": false,
+        "obsolete": false
+      }
+    },
+    {
+      "id": "c03",
+      "source": "LoCoMo conv 5 D1:9 (Audrey)",
+      "observation": "Absolutely! They're city dogs and we explore all the time. They love trying out new parks and trails. We go on adventures together very often.",
+      "recent_memories": [
+        "Audrey has three dogs, Pepper, Precious and Panda, for 3 years."
+      ],
+      "candidate": "Audrey has three dogs, Pepper, Precious and Panda, for 3 years.",
+      "reference": {
+        "should_store": true,
+        "redundant": false,
+        "obsolete": false
+      }
+    },
+    {
+      "id": "c04",
+      "source": "LoCoMo conv 5 D1:11 (Audrey)",
+      "observation": "They really do! It's great how much happiness they bring. Do you have any pets?",
+      "recent_memories": [
+        "Audrey has three dogs, Pepper, Precious and Panda, for 3 years.",
+        "Audrey's dogs are city dogs that explore parks and trails."
+      ],
+      "candidate": "Audrey's dogs are city dogs that explore parks and trails.",
+      "reference": {
+        "should_store": false,
+        "redundant": false,
+        "obsolete": false
+      }
+    },
+    {
+      "id": "c05",
+      "source": "LoCoMo conv 5 D1:21 (Audrey)",
+      "observation": "Cool, gonna give it a try. Thanks for the suggestion!",
+      "recent_memories": [
+        "Audrey has three dogs, Pepper, Precious and Panda, for 3 years.",
+        "Audrey's dogs are city dogs that explore parks and trails."
+      ],
+      "candidate": "Audrey's dogs are city dogs that explore parks and trails.",
+      "reference": {
+        "should_store": false,
+        "redundant": false,
+        "obsolete": false
+      }
+    },
+    {
+      "id": "c06",
+      "source": "LoCoMo conv 5 D2:1 (Audrey)",
+      "observation": "Hey Andrew, I got a surprise for you! We adopted another puppy called Pixie. She's SO cute! Isn't she just the cutest?",
+      "recent_memories": [
+        "Audrey has three dogs, Pepper, Precious and Panda, for 3 years.",
+        "Audrey's dogs are city dogs that explore parks and trails."
+      ],
+      "candidate": "Audrey has three dogs, Pepper, Precious and Panda, for 3 years.",
+      "reference": {
+        "should_store": true,
+        "redundant": false,
+        "obsolete": false
+      }
+    },
+    {
+      "id": "c07",
+      "source": "LoCoMo conv 5 D2:3 (Audrey)",
+      "observation": "Thanks! I know right? She's so cute! Pixie's been keeping us busy, so I haven't had a chance to check out that hiking spot yet.",
+      "recent_memories": [
+        "Audrey has three dogs, Pepper, Precious and Panda, for 3 years.",
+        "Audrey's dogs are city dogs that explore parks and trails.",
+        "Audrey adopted a puppy named Pixie; she took a few days to get used to the other dogs."
+      ],
+      "candidate": "Audrey adopted a puppy named Pixie; she took a few days to get used to the other dogs.",
+      "reference": {
+        "should_store": true,
+        "redundant": false,
+        "obsolete": false
+      }
+    },
+    {
+      "id": "c08",
+      "source": "LoCoMo conv 5 D2:5 (Audrey)",
+      "observation": "Pixie's fitting in great! It took her a few days to get used to the other dogs, but now they're awesome friends. They love playing and exploring the house - so cute!",
+      "recent_memories": [
+        "Audrey has three dogs, Pepper, Precious and Panda, for 3 years.",
+        "Audrey's dogs are city dogs that explore parks and trails."
+      ],
+      "candidate": "Audrey has three dogs, Pepper, Precious and Panda, for 3 years.",
+      "reference": {
+        "should_store": true,
+        "redundant": false,
+        "obsolete": false
+      }
+    },
+    {
+      "id": "c09",
+      "source": "LoCoMo conv 5 D2:7 (Audrey)",
+      "observation": "Pepper took a bit to get used to her, but now they're always together!",
+      "recent_memories": [
+        "Audrey has three dogs, Pepper, Precious and Panda, for 3 years.",
+        "Audrey adopted a puppy named Pixie; she took a few days to get used to the other dogs."
+      ],
+      "candidate": "Audrey adopted a puppy named Pixie; she took a few days to get used to the other dogs.",
+      "reference": {
+        "should_store": true,
+        "redundant": true,
+        "obsolete": false
+      }
+    },
+    {
+      "id": "c10",
+      "source": "LoCoMo conv 5 D2:9 (Audrey)",
+      "observation": "We used websites that helped us find a place that allowed dogs. They had filters that made it super easy. Found a perfect spot thanks to them!",
+      "recent_memories": [
+        "Audrey has three dogs, Pepper, Precious and Panda, for 3 years.",
+        "Audrey adopted a puppy named Pixie; she took a few days to get used to the other dogs."
+      ],
+      "candidate": "Audrey adopted a puppy named Pixie; she took a few days to get used to the other dogs.",
+      "reference": {
+        "should_store": true,
+        "redundant": false,
+        "obsolete": false
+      }
+    },
+    {
+      "id": "c11",
+      "source": "LoCoMo conv 5 D2:11 (Audrey)",
+      "observation": "You got it! I hope you find a great spot soon!",
+      "recent_memories": [
+        "Audrey has three dogs, Pepper, Precious and Panda, for 3 years.",
+        "Audrey adopted a puppy named Pixie; she took a few days to get used to the other dogs.",
+        "Audrey has not yet checked out the hiking spot Andrew recommended."
+      ],
+      "candidate": "Audrey has not yet checked out the hiking spot Andrew recommended.",
+      "reference": {
+        "should_store": false,
+        "redundant": false,
+        "obsolete": false
+      }
+    },
+    {
+      "id": "c12",
+      "source": "LoCoMo conv 5 D4:1 (Audrey)",
+      "observation": "Hey Andrew! Long time no talk! Last week I finally went on a hike and had this amazing experience with a hummingbird. It was so cool watching it dart around with its wings! Nature is so beautiful.",
+      "recent_memories": [
+        "Audrey adopted a puppy named Pixie; she took a few days to get used to the other dogs.",
+        "Audrey has not yet checked out the hiking spot Andrew recommended."
+      ],
+      "candidate": "Audrey has not yet checked out the hiking spot Andrew recommended.",
+      "reference": {
+        "should_store": true,
+        "redundant": false,
+        "obsolete": true
+      }
+    },
+    {
+      "id": "c13",
+      "source": "LoCoMo conv 5 D4:3 (Audrey)",
+      "observation": "That looks great! How often are you able to go hiking now?",
+      "recent_memories": [
+        "Audrey adopted a puppy named Pixie; she took a few days to get used to the other dogs.",
+        "Audrey went on a hike and saw a hummingbird."
+      ],
+      "candidate": "Audrey went on a hike and saw a hummingbird.",
+      "reference": {
+        "should_store": false,
+        "redundant": false,
+        "obsolete": false
+      }
+    },
+    {
+      "id": "c14",
+      "source": "LoCoMo conv 5 D4:15 (Audrey)",
+      "observation": "Not much has changed since we last talked. I'm busy taking care of my pets and spending time with them. It's really fulfilling.",
+      "recent_memories": [
+        "Audrey has three dogs, Pepper, Precious and Panda, for 3 years.",
+        "Audrey adopted a puppy named Pixie; she took a few days to get used to the other dogs.",
+        "Audrey went on a hike and saw a hummingbird."
+      ],
+      "candidate": "Audrey has three dogs, Pepper, Precious and Panda, for 3 years.",
+      "reference": {
+        "should_store": false,
+        "redundant": true,
+        "obsolete": false
+      }
+    },
+    {
+      "id": "c15",
+      "source": "LoCoMo conv 5 D4:17 (Audrey)",
+      "observation": "My dogs go nuts when we go on hikes! They love exploring new scents and being in nature - it's their happy place. I can tell by their wagging tails and expressions how much they love it. It's so great to see them having so much fun!",
+      "recent_memories": [
+        "Audrey's dogs are city dogs that explore parks and trails.",
+        "Audrey went on a hike and saw a hummingbird."
+      ],
+      "candidate": "Audrey went on a hike and saw a hummingbird.",
+      "reference": {
+        "should_store": true,
+        "redundant": false,
+        "obsolete": false
+      }
+    },
+    {
+      "id": "c16",
+      "source": "LoCoMo conv 5 D4:21 (Audrey)",
+      "observation": "When I take them out, we usually play fetch with a ball or frisbee. They love chasing it! We also meet other dog owners in the park and have a doggie playdate. It's a great way for me to chat with people and for them to make new friends.",
+      "recent_memories": [
+        "Audrey's dogs are city dogs that explore parks and trails.",
+        "Audrey went on a hike and saw a hummingbird."
+      ],
+      "candidate": "Audrey's dogs are city dogs that explore parks and trails.",
+      "reference": {
+        "should_store": true,
+        "redundant": false,
+        "obsolete": false
+      }
+    },
+    {
+      "id": "c17",
+      "source": "LoCoMo conv 5 D4:29 (Audrey)",
+      "observation": "Yup! Not at all! Let me know how it goes.",
+      "recent_memories": [
+        "Audrey went on a hike and saw a hummingbird.",
+        "Audrey plays fetch with her dogs and goes to doggie playdates."
+      ],
+      "candidate": "Audrey plays fetch with her dogs and goes to doggie playdates.",
+      "reference": {
+        "should_store": false,
+        "redundant": false,
+        "obsolete": false
+      }
+    },
+    {
+      "id": "c18",
+      "source": "LoCoMo conv 5 D9:1 (Audrey)",
+      "observation": "Woohoo! I got a new place with a bigger backyard for the pooches! Take a look!",
+      "recent_memories": [
+        "Audrey's dogs are city dogs that explore parks and trails.",
+        "Audrey went on a hike and saw a hummingbird.",
+        "Audrey plays fetch with her dogs and goes to doggie playdates."
+      ],
+      "candidate": "Audrey's dogs are city dogs that explore parks and trails.",
+      "reference": {
+        "should_store": true,
+        "redundant": false,
+        "obsolete": false
+      }
+    },
+    {
+      "id": "c19",
+      "source": "LoCoMo conv 5 D9:5 (Audrey)",
+      "observation": "Yep, I set up a doggy play area in the backyard with agility stuff and toys - they're loving it!",
+      "recent_memories": [
+        "Audrey's dogs are city dogs that explore parks and trails.",
+        "Audrey plays fetch with her dogs and goes to doggie playdates.",
+        "Audrey moved to a new place with a bigger backyard."
+      ],
+      "candidate": "Audrey moved to a new place with a bigger backyard.",
+      "reference": {
+        "should_store": true,
+        "redundant": false,
+        "obsolete": false
+      }
+    },
+    {
+      "id": "c20",
+      "source": "LoCoMo conv 5 D9:17 (Audrey)",
+      "observation": "Oh wow those flowers look beautiful. Well aside from moving to a new house, its just me getting unboxing all the packed boxes. What about you?",
+      "recent_memories": [
+        "Audrey moved to a new place with a bigger backyard.",
+        "Audrey plays fetch with her dogs and goes to doggie playdates."
+      ],
+      "candidate": "Audrey moved to a new place with a bigger backyard.",
+      "reference": {
+        "should_store": true,
+        "redundant": true,
+        "obsolete": false
+      }
+    },
+    {
+      "id": "c21",
+      "source": "LoCoMo conv 5 D9:15 (Audrey)",
+      "observation": "For sure! I don't really get some people hating on pets or even hurting them. They're like family to people.",
+      "recent_memories": [
+        "Audrey moved to a new place with a bigger backyard.",
+        "Audrey plays fetch with her dogs and goes to doggie playdates."
+      ],
+      "candidate": "Audrey plays fetch with her dogs and goes to doggie playdates.",
+      "reference": {
+        "should_store": false,
+        "redundant": false,
+        "obsolete": false
+      }
+    },
+    {
+      "id": "c22",
+      "source": "LoCoMo conv 5 D9:23 (Audrey)",
+      "observation": "So a few years back my friends and I went on a hike and stumbled across this stunning lake in the mountains. We sat by it, chat and admiring the peacefulness of nature. I'll never forget those moments.",
+      "recent_memories": [
+        "Audrey went on a hike and saw a hummingbird.",
+        "Audrey moved to a new place with a bigger backyard."
+      ],
+      "candidate": "Audrey went on a hike and saw a hummingbird.",
+      "reference": {
+        "should_store": true,
+        "redundant": false,
+        "obsolete": false
+      }
+    },
+    {
+      "id": "c23",
+      "source": "LoCoMo conv 5 D9:27 (Audrey)",
+      "observation": "Yeah! We shold really appreciate the small things in life and not take anything for granted. :)",
+      "recent_memories": [
+        "Audrey went on a hike and saw a hummingbird.",
+        "Audrey moved to a new place with a bigger backyard."
+      ],
+      "candidate": "Audrey moved to a new place with a bigger backyard.",
+      "reference": {
+        "should_store": false,
+        "redundant": false,
+        "obsolete": false
+      }
+    },
+    {
+      "id": "c24",
+      "source": "LoCoMo conv 5 D1:2 (Andrew)",
+      "observation": "Hey Audrey! So, I started a new job as a Financial Analyst last week - it's been quite a change from my previous job. How about you? Anything interesting happening?",
+      "recent_memories": [],
+      "candidate": null,
+      "reference": {
+        "should_store": true,
+        "redundant": false,
+        "obsolete": false
+      }
+    },
+    {
+      "id": "c25",
+      "source": "LoCoMo conv 5 D1:12 (Andrew)",
+      "observation": "No, no pets right now. But I do love animals.",
+      "recent_memories": [
+        "Andrew started a new job as a Financial Analyst."
+      ],
+      "candidate": "Andrew started a new job as a Financial Analyst.",
+      "reference": {
+        "should_store": true,
+        "redundant": false,
+        "obsolete": false
+      }
+    },
+    {
+      "id": "c26",
+      "source": "LoCoMo conv 5 D1:20 (Andrew)",
+      "observation": "Fox Hollow is a great trail to hike on weekends; the views are awesome!",
+      "recent_memories": [
+        "Andrew started a new job as a Financial Analyst.",
+        "Andrew has no pets right now and loves animals."
+      ],
+      "candidate": "Andrew has no pets right now and loves animals.",
+      "reference": {
+        "should_store": true,
+        "redundant": false,
+        "obsolete": false
+      }
+    },
+    {
+      "id": "c27",
+      "source": "LoCoMo conv 5 D2:8 (Andrew)",
+      "observation": "That's great to hear! I'm considering getting a dog too, but it can be challenging finding a dog-friendly place in the city. Do you have any tips on finding such a place?",
+      "recent_memories": [
+        "Andrew started a new job as a Financial Analyst.",
+        "Andrew has no pets right now and loves animals."
+      ],
+      "candidate": "Andrew has no pets right now and loves animals.",
+      "reference": {
+        "should_store": true,
+        "redundant": false,
+        "obsolete": false
+      }
+    },
+    {
+      "id": "c28",
+      "source": "LoCoMo conv 5 D2:10 (Andrew)",
+      "observation": "Wow, that's so cool! I'll give those websites a try, thanks for the info!",
+      "recent_memories": [
+        "Andrew has no pets right now and loves animals.",
+        "Andrew wants a dog but finds it hard to find a dog-friendly apartment in the city."
+      ],
+      "candidate": "Andrew wants a dog but finds it hard to find a dog-friendly apartment in the city.",
+      "reference": {
+        "should_store": false,
+        "redundant": false,
+        "obsolete": false
+      }
+    },
+    {
+      "id": "c29",
+      "source": "LoCoMo conv 5 D12:1 (Andrew)",
+      "observation": "Hey! So much has changed since last time we talked - meet Toby, my puppy. He's a bundle of joy and I couldn't resist taking him home, city living and all. How've you been?",
+      "recent_memories": [
+        "Andrew has no pets right now and loves animals.",
+        "Andrew wants a dog but finds it hard to find a dog-friendly apartment in the city."
+      ],
+      "candidate": "Andrew has no pets right now and loves animals.",
+      "reference": {
+        "should_store": true,
+        "redundant": false,
+        "obsolete": true
+      }
+    },
+    {
+      "id": "c30",
+      "source": "LoCoMo conv 5 D21:5 (Andrew)",
+      "observation": "Haven't been to the beach in a while. Miss being outdoors. It's hard to find open spaces in the city. Used to hike a lot, but it's more challenging now with my work life balance.",
+      "recent_memories": [
+        "Andrew started a new job as a Financial Analyst.",
+        "Andrew hikes on weekends on the Fox Hollow trail."
+      ],
+      "candidate": "Andrew hikes on weekends on the Fox Hollow trail.",
+      "reference": {
+        "should_store": true,
+        "redundant": false,
+        "obsolete": true
+      }
+    }
+  ]
+}
