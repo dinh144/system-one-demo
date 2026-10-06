@@ -45,6 +45,9 @@ class Session:
     lock: threading.RLock = field(default_factory=threading.RLock)
 
 
+MAX_SESSIONS = 20
+
+
 class SessionStore:
     def __init__(self) -> None:
         self.sessions: dict[str, Session] = {}
@@ -58,6 +61,8 @@ class SessionStore:
         )
         with self.lock:
             self.sessions[session.session_id] = session
+            while len(self.sessions) > MAX_SESSIONS:
+                self.sessions.pop(next(iter(self.sessions)))  # drop the oldest session
         return session
 
     def get(self, session_id: str) -> Session | None:

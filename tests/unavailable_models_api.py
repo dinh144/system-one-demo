@@ -6,7 +6,7 @@ from backend.app import app
 
 
 def main() -> int:
-    with TestClient(app) as client:
+    with TestClient(app, base_url="http://localhost") as client:
         health_response = client.get("/api/health")
         assert health_response.status_code == 200
         health = health_response.json()

@@ -1,6 +1,8 @@
 from __future__ import annotations
 
 import json
+import threading
+import os
 from pathlib import Path
 from typing import Any
 
@@ -27,13 +29,13 @@ class SessionRequest(BaseModel):
 
 
 class TurnRequest(BaseModel):
-    text: str = Field(min_length=1)
+    text: str = Field(min_length=1, max_length=2000)
 
 
 class BenchmarkRequest(BaseModel):
-    engines: list[str] = Field(min_length=1)
-    case_ids: list[str] | None = None
-    warmup: int = Field(default=3, ge=0)
+    engines: list[str] = Field(min_length=1, max_length=8)
+    case_ids: list[str] | None = Field(default=None, max_length=30)
+    warmup: int = Field(default=3, ge=0, le=5)
 
 
 def _json_file(path: Path) -> dict[str, Any]:
@@ -75,8 +77,42 @@ def _model_rows() -> list[dict[str, Any]]:
     return rows
 
 
+# The demo listens on the loopback interface only. A web page open in the same browser can still send requests to it,
+# either directly (cross-site POST) or through DNS rebinding (a hostname that later resolves to 127.0.0.1). So every
+# request must carry a loopback Host header, and a state-changing request that carries an Origin header must come from
+# this very server. Extra hosts can be allowed on purpose with SYSTEM_ONE_ALLOWED_HOSTS="name1,name2".
+_ALLOWED_HOSTS = {"127.0.0.1", "localhost", "::1"} | {
+    host.strip().lower() for host in os.environ.get("SYSTEM_ONE_ALLOWED_HOSTS", "").split(",") if host.strip()
+}
+_BENCHMARK_LOCK = threading.Lock()
+
+
+def _hostname(netloc: str) -> str:
+    netloc = netloc.strip().lower()
+    if netloc.startswith("["):
+        return netloc[1:].split("]", 1)[0]
+    return netloc.rsplit(":", 1)[0] if netloc.count(":") == 1 else netloc
+
+
+def _blocked(code: int, error: str, message: str) -> JSONResponse:
+    return JSONResponse(status_code=code, content={"schema": 1, "error": {"code": error, "message": message}})
+
+
 def create_app() -> FastAPI:
     app = FastAPI(title="System-One memory-control demo", version="1")
+
+    @app.middleware("http")
+    async def local_only_guard(request: Request, call_next):
+        host_header = request.headers.get("host", "")
+        if _hostname(host_header) not in _ALLOWED_HOSTS:
+            return _blocked(400, "host_not_allowed", "This server only answers requests addressed to localhost.")
+        if request.method not in ("GET", "HEAD", "OPTIONS"):
+            origin = request.headers.get("origin")
+            if origin is not None:
+                origin_netloc = origin.split("://", 1)[-1].rstrip("/").lower()
+                if origin_netloc != host_header.strip().lower():
+                    return _blocked(403, "origin_not_allowed", "Cross-origin requests are not accepted.")
+        return await call_next(request)
 
     @app.exception_handler(Exception)
     async def unhandled_error(_request: Request, exc: Exception) -> JSONResponse:
@@ -218,8 +254,18 @@ def create_app() -> FastAPI:
                     status_code=400,
                     content={"schema": 1, "error": {"code": "invalid_case", "message": "One or more case ids are not supported."}},
                 )
+        if not _BENCHMARK_LOCK.acquire(blocking=False):
+            return _blocked(429, "benchmark_busy", "A benchmark is already running on this machine.")
+
+        async def guarded():
+            try:
+                async for chunk in benchmark_stream(body.engines, body.case_ids, body.warmup):
+                    yield chunk
+            finally:
+                _BENCHMARK_LOCK.release()
+
         return StreamingResponse(
-            benchmark_stream(body.engines, body.case_ids, body.warmup),
+            guarded(),
             media_type="text/event-stream",
             headers={"Cache-Control": "no-cache", "X-Accel-Buffering": "no"},
         )

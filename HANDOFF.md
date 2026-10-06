@@ -124,6 +124,10 @@ Run these commands from a clean source copy's root. The commands do not require 
 - The replay tab shows a recording made on the authors' ThinkPad (CPU only). To record a replay on this machine instead, with the demo running in another window, run `python scripts/record_replay.py --recorded-on "describe this machine honestly, for example Legion 5, RTX 3060 6 GB"`. It overwrites `data/replay.json`. Do not put another machine's name there.
 - A recorded video of a real run on the ThinkPad is `data/video/demo-thinkpad.webm`. If the demo does not run on the presenter's machine, play that video and say it was recorded on a different machine.
 
+## Network exposure
+
+The demo answers only requests addressed to `localhost`, `127.0.0.1` or `::1`, and rejects state-changing requests that come from another origin. That stops a web page open in the same browser from driving it. Do not expose the port to a network. If you must reach it by another hostname on purpose, set `SYSTEM_ONE_ALLOWED_HOSTS` to a comma-separated list of those hostnames before `python -m demo run`.
+
 ## Optional appendix: rebuild the static UI
 
 The repository includes the built UI in `web/out/`, so these Node.js steps are only needed when changing the web source or restoring a missing export. Keep `NEXT_PUBLIC_API_BASE` unset so the exported UI uses same-origin API requests.
