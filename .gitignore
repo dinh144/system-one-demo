@@ -25,3 +25,4 @@ web/shots/
 BACKEND_NOTES.md
 web/UI_NOTES.md
 web/tsconfig.tsbuildinfo
+graphify-out/
