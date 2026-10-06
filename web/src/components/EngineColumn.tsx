@@ -69,7 +69,7 @@ export function EngineColumn({
   return (
     <div
       data-testid={`column-${engineId}`}
-      className="flex-1 min-w-[280px] flex flex-col gap-4 bg-surface border border-line rounded-card p-4"
+      className="flex-1 min-w-[240px] flex flex-col gap-4 bg-surface border border-line rounded-card p-4"
     >
       {/* Column Header */}
       <header className="flex flex-col gap-2 border-b border-line pb-3">

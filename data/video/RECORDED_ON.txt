@@ -1,3 +1,4 @@
 Recorded on: ThinkPad X1 Carbon Gen 9 (Intel i7-1185G7, CPU only, no GPU), 2026-10-07.
-Real run of the 10-turn scenario on the real backend (engines run one after another). Not recorded on the presenter machine.
-Background load on the laptop was not controlled, so latencies shown in the video are noisy.
+Real run of the 10-turn scenario on the real backend (engines run one after another), driven in Chrome with Claude in Chrome and captured with its GIF recorder, then converted to H.264 mp4.
+The recorder captures one frame per action, so this is a slideshow of 16 frames taken about 4 seconds apart while the scenario ran, each shown for 4 seconds. It is not a real-time screen capture, and the scenario itself ran faster than the video.
+The latencies in the frames are real measurements from this laptop, with uncontrolled background load. Not recorded on the presenter machine.

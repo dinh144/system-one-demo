@@ -424,6 +424,7 @@ const server = http.createServer(async (req, res) => {
         latencyMs = 294.0;
       }
 
+      res.write(`event: engine_start\ndata: ${JSON.stringify({ engine: eng })}\n\n`);
       await sleep(delayMs);
 
       // Check if this engine should simulate mid-turn error

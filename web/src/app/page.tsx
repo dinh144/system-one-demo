@@ -194,6 +194,8 @@ export default function Home() {
         decisions: {},
         errors: {},
         isPending: pendingMap,
+        // Every engine waits until the backend sends its engine_start event; nothing counts time before that.
+        isRunning: Object.fromEntries(activeEngineIds.map((id) => [id, false])),
       };
 
       setTurnEvents((prev) => [...prev, newTurnEvent]);
@@ -420,7 +422,7 @@ export default function Home() {
             />
 
             {/* Right Area: Three Engine Columns (each ≈ 24%) */}
-            <div className="flex-1 w-full grid grid-cols-1 md:grid-cols-2 min-[1000px]:grid-cols-3 gap-4 items-start">
+            <div className="flex-1 w-full grid grid-cols-1 md:grid-cols-2 min-[1150px]:grid-cols-3 gap-4 items-start">
               {/* Column 1: Laya */}
               <EngineColumn
                 engineId="laya"
